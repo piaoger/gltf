@@ -29,15 +29,15 @@ image = { optional = true, version = "0.19" }
 lazy_static = "0.2"
 
 [features]
-default = ["import", "utils", "names"]
+default = ["import_rayon", "utils", "names"]
 extras = ["gltf-json/extras"]
 names = ["gltf-json/names"]
 utils = []
-jpeg-rayon = ["image/jpeg_rayon"]
+jpeg_rayon = ["image/jpeg_rayon"]
 jpeg = ["image/jpeg"]
 png = ["image/png_codec"]
 import = ["base64", "jpeg","png"]
-import-rayon = ["base64", "jpeg-rayon","png"]
+import_rayon = ["base64", "jpeg_rayon","png"]
 KHR_materials_pbrSpecularGlossiness = ["gltf-json/KHR_materials_pbrSpecularGlossiness"]
 
 [[example]]
